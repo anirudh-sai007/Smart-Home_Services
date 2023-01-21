@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user_or_sp">
+
+
+    <LinearLayout
+        android:id="@+id/rcg"
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:background="@color/bg2"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/uicon"
+            app:civ_border_color="@color/civ_border_color"
+            app:civ_border_width="2dp" />
+
+        <Button
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@drawable/button_style4"
+            android:fontFamily="@font/carter_one"
+            android:text="USER"
+            android:textColor="@color/li1"
+
+            android:id="@+id/ur"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:id="@+id/r"
+        android:orientation="vertical"
+        android:background="@color/bg2"
+        android:layout_below="@+id/rcg"        >
+
+        <Button
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@drawable/button_style4"
+            android:id="@+id/sr"
+            android:fontFamily="@font/carter_one"
+            android:text="SERVICE PROVIDER"
+            android:textColor="@color/li2"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="bottom">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="350dp"
+                android:src="@drawable/spicon"
+                app:civ_border_color="@color/civ_border_color"
+                app:civ_border_width="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

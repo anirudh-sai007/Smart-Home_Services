@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgu"
+    tools:context=".userorsp">
+
+    <Button
+        android:id="@+id/userregn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="USER"
+        android:background="@drawable/button_style4"
+        android:textSize="30sp"
+        android:layout_marginTop="250dp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/sproviderregn"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:text="SERVICE PROVIDER"
+        android:textSize="30sp"
+        android:layout_margin="80dp"
+         />
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.cardview.widget.CardView
+    app:cardUseCompatPadding="true"
+    android:id="@+id/cvl"
+    android:elevation="4dp"
+    app:cardCornerRadius="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="16dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:id="@+id/imgv"
+            android:src="@drawable/spicon"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="Name"
+            android:id="@+id/t1"
+            android:layout_toRightOf="@id/imgv"
+            android:layout_marginLeft="40dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="23dp"
+            android:text="email"
+            android:id="@+id/t2"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/imgv"
+            android:layout_below="@+id/t1"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

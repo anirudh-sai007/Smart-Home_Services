@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myaccount">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="30dp"
+        >
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+
+            android:id="@+id/imgv"
+            android:src="@drawable/spicon"/>
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/imgv"
+            android:fontFamily="sans-serif"
+            android:text="Anirudh Sai"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:text="Anirudh1105@gmail.com"
+            android:onClick="updateprofile"
+            android:id="@+id/t2"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/imgv"
+            android:layout_below="@+id/t1"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/one"
+        android:onClick="deleteprofile"
+        android:layout_marginTop="185dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="deleteprofile"
+            android:layout_toLeftOf="@id/customSpinnerIcon"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivSpinnerLayout"
+                android:layout_width="60dp"
+                android:layout_height="85dp"
+                android:onClick="deleteprofile"
+                android:padding="10dp"
+                android:src="@drawable/uss" />
+
+            <TextView
+                android:id="@+id/tvSpinnerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="My Account"
+                android:textColor="@android:color/black"
+                android:onClick="deleteprofile"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/customSpinnerIcon"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:onClick="deleteprofile"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_arrow_right_24" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/two"
+        android:layout_below="@+id/one"
+        android:onClick="reportedusers"
+        android:layout_marginTop="5dp">
+        <LinearLayout
+            android:id="@+id/customSpinnerItemLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/customSpinnerIcon2"
+            android:onClick="reportedusers"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivSpinnerLayout2"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:padding="10dp"
+                android:onClick="reportedusers"
+                android:src="@drawable/reportedusers" />
+
+            <TextView
+                android:id="@+id/tvSpinnerLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="reportedusers"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Reported Users"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/customSpinnerIcon2"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:onClick="reportedusers"
+            android:src="@drawable/ic_baseline_arrow_right_24" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/three"
+        android:onClick="recenthistory"
+        android:layout_below="@+id/two"
+        android:layout_marginTop="2dp">
+        <LinearLayout
+            android:id="@+id/customSpinnerItemLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/customSpinnerIcon3"
+            android:onClick="recenthistory"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivSpinnerLayout3"
+                android:layout_width="60dp"
+                android:layout_height="85dp"
+                android:padding="10dp"
+                android:onClick="recenthistory"
+                android:src="@drawable/recentactivity" />
+
+            <TextView
+                android:id="@+id/tvSpinnerLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Recent Activity"
+                android:layout_gravity="center"
+                android:onClick="recenthistory"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/customSpinnerIcon3"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:onClick="recenthistory"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_arrow_right_24" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/four"
+        android:layout_below="@+id/three"
+        android:onClick="Logout"
+        android:layout_marginTop="2dp">
+        <LinearLayout
+            android:id="@+id/customSpinnerItemLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="Logout"
+            android:layout_toLeftOf="@id/customSpinnerIcon4"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivSpinnerLayout4"
+                android:layout_width="60dp"
+                android:layout_height="85dp"
+                android:onClick="Logout"
+                android:padding="10dp"
+                android:src="@drawable/signout" />
+
+            <TextView
+                android:id="@+id/tvSpinnerLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Logout"
+                android:onClick="Logout"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/customSpinnerIcon4"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:onClick="Logout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_arrow_right_24" />
+    </RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:background="@drawable/rounded"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/bnm"
+        app:itemIconTint="@color/purple_500"
+        app:itemTextColor="@color/green"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu"/>
+
+</RelativeLayout>

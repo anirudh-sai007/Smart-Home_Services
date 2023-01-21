@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item1"
+        android:title="Home"
+        android:icon="@drawable/home"
+        />
+
+    <item
+        android:id="@+id/item2"
+        android:title="Book Slot"
+        android:icon="@drawable/packers"/>
+    <item
+        android:id="@+id/item5"
+        android:title="My Slots"
+        android:icon="@drawable/electrician"/>
+    <item
+        android:id="@+id/item3"
+        android:title="Favorites"
+        android:icon="@drawable/favorites"/>
+
+    <item
+        android:id="@+id/item4"
+        android:title="My Account"
+        android:icon="@drawable/account"/>
+</menu>

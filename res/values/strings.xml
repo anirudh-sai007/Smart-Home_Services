@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">dumee1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="googlepay_button_content_description">Google Pay</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="countries">
+        <item>Carpenter</item>
+        <item>Driver</item>
+        <item>Electrician</item>
+        <item>Tutor</item>
+        <item>Ladies Tailor</item>
+        <item>Painter</item>
+        <item>Photographer</item>
+        <item>Plumber</item>
+        <item>Packers and Movers</item>
+        <item>Mechanic</item>
+        <item>Welding</item>
+
+    </string-array>
+</resources>

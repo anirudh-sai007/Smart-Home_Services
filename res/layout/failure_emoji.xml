@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/la"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/angryemoticon" />
+
+    <TextView
+        android:id="@+id/id1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Unsuccessful , Please Try again...."
+        android:textSize="18sp"
+        android:textColor="#FF3D00"
+      android:layout_below="@id/la"/>
+
+</RelativeLayout>
